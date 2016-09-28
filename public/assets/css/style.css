@@ -1,0 +1,17 @@
+
+.title {
+	font-family: 'Lobster', cursive;
+	font-size: 48px;
+	border-bottom: 1px;
+    color: #FA9A2A;
+}
+
+#submitDiv {
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+#bestMatchPhoto {
+  max-width: 100%;
+  height: auto;
+}

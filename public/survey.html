@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Friend Finder</title>
+ 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Abel|Lobster" rel="stylesheet">
+
+  
+   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+   <script src="/assets/js/newUsr.js"></script> 
+</head>
+
+<body>
+
+<div id="outer" class="container">
+  <div id="inner" class="row">
+  
+  
+  <div class="title">Friend Finder</div>
+  <form id="survey" >
+    <h3>About You</h3>
+    <div class="form-group">
+      <label for="usr">Name (Required):</label>
+      <input type="text" class="form-control" id="usr" data-q="name">
+    </div>
+
+    <div class="form-group">
+      <label for="photo">Link to Photo Image (Required):</label>
+      <input type="text" class="form-control" id="photo" data-q="photo">
+    </div>
+
+    <div id="questions">
+
+    </div>
+
+    <div id="submitDiv">
+    <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit"><i class="fa fa-check-circle" aria-hidden="true"></i>
+ Submit</button>
+    </div>
+  </form>
+  </div>
+</div>
+
+<!-- Modal -->
+
+<!-- Modal -->
+<div class="modal fade" id="bestMatchModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title" id="myModalLabel">Your Best Match: </h4>
+      </div>
+      <div class="modal-body">
+        <h3 id="bestMatch"></h3>
+        <img id="bestMatchPhoto" src=".." class="img-fluid">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- End Modal -->
+
+</body>
+</html>
